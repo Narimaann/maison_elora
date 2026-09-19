@@ -7,130 +7,226 @@
 <title>Maison Élora</title>
 
 <style>
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Georgia, serif;
-    background: #fff9fb;
-    color: #33272c;
+    background: #fcf8f7;
+    color: #2f2528;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
+/* HEADER */
+
 header {
-    padding: 25px 20px;
+    background: #fffdfc;
+    padding: 24px 22px;
     text-align: center;
-    border-bottom: 1px solid #f0dfe5;
+    border-bottom: 1px solid #eee3e2;
 }
 
 .logo {
-    font-size: 27px;
-    letter-spacing: 5px;
+    font-size: 25px;
+    letter-spacing: 6px;
 }
 
 .tagline {
     margin-top: 8px;
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: #8d747d;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #967b82;
 }
 
+/* HERO */
+
 .hero {
-    min-height: 70vh;
+    min-height: 78vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 25px;
+    padding: 45px 25px;
+    background:
+        linear-gradient(
+            rgba(255, 248, 250, 0.72),
+            rgba(255, 248, 250, 0.72)
+        ),
+        #efdde2;
+}
+
+.hero-small {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    color: #806b71;
 }
 
 .hero h1 {
-    font-size: 45px;
-    font-weight: normal;
-    letter-spacing: 6px;
     margin: 0;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 7px;
 }
 
-.hero p {
+.hero-text {
+    max-width: 380px;
+    margin: 20px auto 32px;
     font-size: 16px;
-    letter-spacing: 2px;
-    color: #806a72;
-    margin: 18px 0 35px;
+    line-height: 1.7;
+    color: #69585d;
 }
 
 .shop-button {
     display: inline-block;
-    background: #dcaebe;
+    padding: 15px 42px;
+    background: #2f2528;
     color: white;
-    padding: 15px 40px;
-    border-radius: 30px;
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-size: 13px;
-    letter-spacing: 2px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    transition: 0.3s;
 }
 
 .shop-button:hover {
-    background: #c994a7;
+    background: #b98d9c;
 }
 
-section {
-    padding: 45px 25px;
+/* SHOP */
+
+.shop {
+    padding: 70px 22px;
+    background: #fffdfc;
     text-align: center;
 }
 
-section h2 {
-    font-size: 27px;
+.shop-label {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #a27d89;
+}
+
+.shop h2 {
+    margin: 12px 0 35px;
+    font-size: 31px;
     font-weight: normal;
     letter-spacing: 3px;
 }
 
 .categories {
+    max-width: 750px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    max-width: 600px;
-    margin: 30px auto;
+    gap: 14px;
 }
 
 .category {
-    background: #f8e5eb;
-    padding: 45px 10px;
-    border-radius: 12px;
-    font-size: 17px;
-    letter-spacing: 1px;
+    min-height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5e6ea;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.3s;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    font-size: 12px;
-    color: #8d747d;
-    border-top: 1px solid #f0dfe5;
+.category:hover {
+    background: #ead2da;
+    transform: translateY(-3px);
 }
+
+/* ABOUT */
+
+.about {
+    padding: 70px 30px;
+    text-align: center;
+    background: #f9f1f2;
+}
+
+.about h2 {
+    font-size: 29px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.about p {
+    max-width: 550px;
+    margin: 20px auto;
+    line-height: 1.8;
+    color: #6d5b61;
+    font-size: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #fffdfc;
+    color: #917c82;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">MAISON ÉLORA</div>
-    <div class="tagline">Elegance, made for you.</div>
+
+    <div class="logo">
+        MAISON ÉLORA
+    </div>
+
+    <div class="tagline">
+        ELEGANCE, MADE FOR YOU
+    </div>
+
 </header>
 
-<div class="hero">
-    <h1>MAISON ÉLORA</h1>
 
-    <p>Discover pieces made to feel beautiful.</p>
+<section class="hero">
 
-    <a class="shop-button" href="#shop">SHOP NOW</a>
-</div>
+    <div class="hero-small">
+        THE NEW COLLECTION
+    </div>
 
-<section id="shop">
+    <h1>
+        MAISON ÉLORA
+    </h1>
 
-    <h2>SHOP</h2>
+    <p class="hero-text">
+        Timeless pieces, feminine details,
+        and effortless elegance.
+    </p>
+
+    <a href="#shop" class="shop-button">
+        DISCOVER
+    </a>
+
+</section>
+
+
+<section class="shop" id="shop">
+
+    <div class="shop-label">
+        EXPLORE
+    </div>
+
+    <h2>
+        Shop by Category
+    </h2>
 
     <div class="categories">
 
@@ -154,8 +250,26 @@ footer {
 
 </section>
 
+
+<section class="about">
+
+    <h2>
+        The Élora Woman
+    </h2>
+
+    <p>
+        Feminine, confident and effortlessly elegant.
+        Maison Élora celebrates pieces designed
+        to make every moment feel special.
+    </p>
+
+</section>
+
+
 <footer>
-    © 2026 Maison Élora
+
+    © 2026 MAISON ÉLORA
+
 </footer>
 
 </body>
